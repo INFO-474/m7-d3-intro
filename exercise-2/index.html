@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M7: Exercise 2</title>
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+      <h1>Welcome to Module 7 Exercise 2</h1>
+      <p>To complete this exercise, edit your <code>main.js</code> file. You'll get practice with some basic <code>D3</code> data binding.
+      </p>
+      <div class="instructions">
+        <ul>
+          <li>Create a varaible <code>myDiv</code> by selecting the element with id <code>my-div</code> (this is already created for you).</li>
+          <li>Create a variable <code>paragraphs</code> by selecting all <code>p</code> elements in <code>myDiv</code>, and binding the data <code>people</code> to it. Make sure to specify the <code>name</code> attribute as an identifying characteristic in your data-join.</li>
+          <li>You'll then want to add a paragraph to the div for each person in your dataset. To do this:
+            <ul>
+              <li>Determine which elements are in the dataset but are not represented in the DOM (<code>enter</code>)</li>
+              <li>For each new element, <code>append</code> a paragraph (<code>p</code>) element</li>
+              <li>For each paragraph, set the text of the paragraph to the <code>name</code> of the person (<code>text</code>)
+              <li>For each paragraph, set the color to the <code>favColor</code> of the person (<code>color</code>)
+            </ul>
+          </li>
+          <li>Then, you should use the <code>setTimeout</code> function to wait 3 seconds, then do the following
+            <ul>
+              <li>Re-define your variable <code>paragraphs</code> by selecting all <code>p</code> elements in <code>myDiv</code>, and binding the data <code>people2</code> to it. Make sure to specify the <code>name</code> attribute as an identifying characteristic in your data-join. Note, you <strong>cannot</strong> use the selection from earlier, as new elements have been added since that selection was defined</li>
+              <li>Determine which people are no longer represented in the data (<code>exit</code>), and transition their opacity to 0 and remove them.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <section id="sandbox">
+        <p><em>Sandbox section: you'll add elements here</em></p>
+        <div id="my-div"></div>
+      </section>
+  </body>
+</html>
