@@ -1,6 +1,6 @@
 ## Exercise 3: Mastering Data Binding
 
-In this exercise, write functions that demonstrate your familiarity with data-binding. Start by forking and cloning this repository, running a local server, and opening up the `index.html` file. Then, edit the `js/main.js` to complete the outlined steps. You'll build this simple shape:
+In this exercise, you'll write functions that demonstrate your familiarity with data-binding. Start by forking and cloning this repository, running a local server, and opening up the `index.html` file. Then, edit the `js/main.js` to complete the outlined steps. You'll write the code necessary to handle data-bindings for both `text` and `rect` elements:
 
 ![animations of one paragraph disappearing](imgs/complete.gif)
 
